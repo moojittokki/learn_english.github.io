@@ -95,6 +95,14 @@
             </h2>
 
             <div class="story-box mb-xl">
+                <div
+                    style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--spacing-lg);">
+                    <h4 style="margin: 0; color: var(--day-story);">English Text</h4>
+                    <button class="btn btn-secondary toggle-translation-btn" style="font-size: var(--font-size-sm);">
+                        🇰🇷 번역 보기
+                    </button>
+                </div>
+
                 <div class="story-text" style="font-family: var(--font-body); line-height: 2.2;">
                     <p style="margin-bottom: var(--spacing-lg);">
                         Hello! My name <span class="highlight">is</span> James. I <span class="highlight">am</span> 32
@@ -117,16 +125,11 @@
                     </p>
                 </div>
 
-                <!-- Korean Translation Toggle (Collapsible) -->
-                <details class="translation-toggle" style="margin-top: var(--spacing-xl);">
-                    <summary
-                        style="cursor: pointer; color: var(--color-accent-purple); font-weight: 600; padding: var(--spacing-md); background: rgba(102, 126, 234, 0.1); border-radius: var(--radius-md); display: flex; align-items: center; gap: var(--spacing-sm); list-style: none; user-select: none; transition: all var(--transition-normal);">
-                        <span class="toggle-arrow"
-                            style="transition: transform var(--transition-normal); display: inline-block;">▶</span>
-                        📝 한국어 번역 보기
-                    </summary>
-                    <div class="translation-content"
-                        style="color: var(--color-text-secondary); line-height: 2; padding: var(--spacing-lg); padding-top: var(--spacing-md); background: rgba(102, 126, 234, 0.05); border-radius: 0 0 var(--radius-md) var(--radius-md); margin-top: -4px;">
+                <!-- Korean Translation (toggleable) -->
+                <div class="translation-content"
+                    style="display: none; margin-top: var(--spacing-xl); padding-top: var(--spacing-lg); border-top: 1px solid var(--glass-border);">
+                    <h4 style="color: var(--color-text-tertiary); margin-bottom: var(--spacing-md);">📝 한국어 번역</h4>
+                    <div style="color: var(--color-text-secondary); line-height: 2;">
                         <p style="margin-bottom: var(--spacing-md);">
                             안녕하세요! 제 이름<strong>은</strong> James입니다. 저<strong>는</strong> 32살입니다. 저<strong>는</strong>
                             소프트웨어 엔지니어입니다. 저는 서울의 기술 회사에서 일합니다.
@@ -143,7 +146,7 @@
                             우리 가족<strong>은</strong> 작지만 행복합니다. 저는 서울에서의 삶을 사랑합니다!
                         </p>
                     </div>
-                </details>
+                </div>
             </div>
 
             <!-- Comprehension Check -->
@@ -431,6 +434,21 @@
 
     <script src="../assets/js/main.js"></script>
     <script>
+        // Translation toggle
+        document.querySelectorAll('.toggle-translation-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const card = btn.closest('.story-box');
+                const translation = card.querySelector('.translation-content');
+                if (translation.style.display === 'none') {
+                    translation.style.display = 'block';
+                    btn.textContent = '🇰🇷 번역 숨기기';
+                } else {
+                    translation.style.display = 'none';
+                    btn.textContent = '🇰🇷 번역 보기';
+                }
+            });
+        });
+
         // Initialize quiz functionality
         document.querySelectorAll('.quiz-card').forEach(card => {
             const options = card.querySelectorAll('.quiz-option');
