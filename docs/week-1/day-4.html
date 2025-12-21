@@ -267,6 +267,46 @@
                 </p>
             </div>
 
+            <!-- Role Play Audio Player -->
+            <div class="glass-card mb-xl"
+                style="text-align: center; background: rgba(102, 126, 234, 0.08); border: 1px solid rgba(102, 126, 234, 0.2);">
+                <div style="font-size: var(--font-size-2xl); margin-bottom: var(--spacing-md);">🎧</div>
+                <h4 style="margin-bottom: var(--spacing-md); color: var(--color-text-primary);">Role Play Audio</h4>
+                <p
+                    style="color: var(--color-text-secondary); margin-bottom: var(--spacing-lg); font-size: var(--font-size-sm);">
+                    A (James)와 B (Yuna)의 대화를 들어보세요
+                </p>
+
+                <audio id="roleplayAudio">
+                    <source src="../assets/audio/week1_day4_roleplay.mp3" type="audio/mpeg">
+                    브라우저가 오디오를 지원하지 않습니다.
+                </audio>
+
+                <div
+                    style="display: flex; justify-content: center; gap: var(--spacing-md); flex-wrap: wrap; margin-bottom: var(--spacing-md);">
+                    <button id="rpPlayBtn" class="btn btn-primary">
+                        ▶️ 재생
+                    </button>
+                    <button id="rpPauseBtn" class="btn btn-secondary">
+                        ⏸️ 일시정지
+                    </button>
+                    <button id="rpRestartBtn" class="btn btn-secondary">
+                        🔄 처음부터
+                    </button>
+                </div>
+
+                <div style="display: flex; justify-content: center; gap: var(--spacing-sm); flex-wrap: wrap;">
+                    <button class="btn btn-secondary rp-speed-btn" data-speed="0.75">🐢 0.75x</button>
+                    <button class="btn btn-secondary rp-speed-btn active-rp-speed" data-speed="1">🚶 1.0x</button>
+                    <button class="btn btn-secondary rp-speed-btn" data-speed="1.25">🏃 1.25x</button>
+                </div>
+
+                <p id="rpSpeedIndicator"
+                    style="color: var(--color-text-tertiary); margin-top: var(--spacing-md); margin-bottom: 0; font-size: var(--font-size-sm);">
+                    현재 속도: 1.0x
+                </p>
+            </div>
+
             <div class="roleplay-container mb-xl">
                 <div class="roleplay-line">
                     <div class="roleplay-speaker speaker-a">A</div>
@@ -558,6 +598,31 @@
                 btn.classList.add('active-speed');
             });
         });
+
+        // Role Play Audio Player
+        const rpAudio = document.getElementById('roleplayAudio');
+        const rpPlayBtn = document.getElementById('rpPlayBtn');
+        const rpPauseBtn = document.getElementById('rpPauseBtn');
+        const rpRestartBtn = document.getElementById('rpRestartBtn');
+        const rpSpeedIndicator = document.getElementById('rpSpeedIndicator');
+        const rpSpeedBtns = document.querySelectorAll('.rp-speed-btn');
+
+        rpPlayBtn.addEventListener('click', () => rpAudio.play());
+        rpPauseBtn.addEventListener('click', () => rpAudio.pause());
+        rpRestartBtn.addEventListener('click', () => {
+            rpAudio.currentTime = 0;
+            rpAudio.play();
+        });
+
+        rpSpeedBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const speed = parseFloat(btn.dataset.speed);
+                rpAudio.playbackRate = speed;
+                rpSpeedIndicator.textContent = `현재 속도: ${speed}x`;
+                rpSpeedBtns.forEach(b => b.classList.remove('active-rp-speed'));
+                btn.classList.add('active-rp-speed');
+            });
+        });
     </script>
 
     <style>
@@ -772,6 +837,12 @@
         /* Audio Player Styles */
         .sh-speed-btn.active-speed {
             background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%) !important;
+            color: white !important;
+            border-color: transparent !important;
+        }
+
+        .rp-speed-btn.active-rp-speed {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
             color: white !important;
             border-color: transparent !important;
         }
