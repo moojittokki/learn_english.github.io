@@ -91,13 +91,43 @@
                 </p>
             </div>
 
-            <!-- Audio Player Placeholder -->
+            <!-- Story Audio Player -->
             <div class="glass-card mb-xl text-center"
                 style="background: rgba(56, 239, 125, 0.08); border: 1px solid rgba(56, 239, 125, 0.2);">
                 <div style="font-size: var(--font-size-2xl); margin-bottom: var(--spacing-md);">🔊</div>
                 <h4 style="margin-bottom: var(--spacing-md); color: var(--color-text-primary);">Story Audio</h4>
-                <p style="color: var(--color-text-tertiary); margin-bottom: 0; font-size: var(--font-size-sm);">
-                    오디오 생성 예정
+                <p
+                    style="color: var(--color-text-secondary); margin-bottom: var(--spacing-lg); font-size: var(--font-size-sm);">
+                    James의 하루 일과를 들어보세요
+                </p>
+
+                <audio id="storyAudio">
+                    <source src="../assets/audio/week1_day5_story.mp3" type="audio/mpeg">
+                    브라우저가 오디오를 지원하지 않습니다.
+                </audio>
+
+                <div
+                    style="display: flex; justify-content: center; gap: var(--spacing-md); flex-wrap: wrap; margin-bottom: var(--spacing-md);">
+                    <button id="stPlayBtn" class="btn btn-primary">
+                        ▶️ 재생
+                    </button>
+                    <button id="stPauseBtn" class="btn btn-secondary">
+                        ⏸️ 일시정지
+                    </button>
+                    <button id="stRestartBtn" class="btn btn-secondary">
+                        🔄 처음부터
+                    </button>
+                </div>
+
+                <div style="display: flex; justify-content: center; gap: var(--spacing-sm); flex-wrap: wrap;">
+                    <button class="btn btn-secondary st-speed-btn" data-speed="0.75">🐢 0.75x</button>
+                    <button class="btn btn-secondary st-speed-btn active-st-speed" data-speed="1">🚶 1.0x</button>
+                    <button class="btn btn-secondary st-speed-btn" data-speed="1.25">🏃 1.25x</button>
+                </div>
+
+                <p id="stSpeedIndicator"
+                    style="color: var(--color-text-tertiary); margin-top: var(--spacing-md); margin-bottom: 0; font-size: var(--font-size-sm);">
+                    현재 속도: 1.0x
                 </p>
             </div>
 
@@ -481,7 +511,44 @@
         });
     </script>
 
+    <script>
+        // Story Audio Player Controls
+        const storyAudio = document.getElementById('storyAudio');
+        const stPlayBtn = document.getElementById('stPlayBtn');
+        const stPauseBtn = document.getElementById('stPauseBtn');
+        const stRestartBtn = document.getElementById('stRestartBtn');
+        const stSpeedIndicator = document.getElementById('stSpeedIndicator');
+
+        stPlayBtn.addEventListener('click', () => storyAudio.play());
+        stPauseBtn.addEventListener('click', () => storyAudio.pause());
+        stRestartBtn.addEventListener('click', () => {
+            storyAudio.currentTime = 0;
+            storyAudio.play();
+        });
+
+        document.querySelectorAll('.st-speed-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const speed = parseFloat(btn.dataset.speed);
+                storyAudio.playbackRate = speed;
+                stSpeedIndicator.textContent = `현재 속도: ${speed}x`;
+                document.querySelectorAll('.st-speed-btn').forEach(b => b.classList.remove('active-st-speed'));
+                btn.classList.add('active-st-speed');
+            });
+        });
+    </script>
+
     <style>
+        /* Story Audio Speed Button Active */
+        .st-speed-btn.active-st-speed {
+            background: linear-gradient(135deg, #38ef7d, #11998e);
+            border-color: transparent;
+            color: white;
+        }
+
+        audio {
+            display: none;
+        }
+
         /* Frequency Chart */
         .frequency-chart {
             display: grid;

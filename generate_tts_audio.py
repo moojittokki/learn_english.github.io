@@ -57,6 +57,21 @@ We have one daughter. Her name is Sophie. She is 5 years old. She is very cute a
 My family is small but happy. I love my life in Seoul!
 """
 
+# Day 5 스토리 텍스트 (A Day in James's Life)
+DAY5_STORY_TEXT = """
+James always wakes up at 7 AM. He usually takes a shower and eats breakfast. He often has toast and coffee in the morning.
+
+He leaves home at 8:30 AM. He usually takes the subway to work. The commute takes about 40 minutes. He sometimes listens to podcasts on the subway.
+
+James starts work at 9 AM. He checks his emails first. He usually has meetings in the morning. He often works with his team on new projects.
+
+He always eats lunch at 12:30 PM. He sometimes goes to a restaurant with his coworkers. He usually brings a lunch box from home.
+
+James finishes work at 6 PM. He usually gets home around 7 PM. He plays with Sophie before dinner. They often read books together.
+
+He usually goes to bed at 11 PM. James loves his routine. He never gets bored!
+"""
+
 # Day 4 Shadowing 문장들 (개별 문장, 약간의 간격을 두고 천천히)
 SHADOWING_SENTENCES = [
     "Hello! My name is James.",
@@ -137,15 +152,11 @@ async def main():
     output_dir.mkdir(parents=True, exist_ok=True)
     
     print("=" * 50)
-    print("🎤 Day 4 Shadowing 오디오 생성")
+    print("🎤 Day 5 Story 오디오 생성")
     print("=" * 50)
     
-    # Shadowing 문장들을 하나의 텍스트로 합치기 (문장 사이에 쉼표로 구분)
-    # 각 문장 후 약간의 멈춤을 위해 줄바꿈 추가
-    shadowing_text = "\n\n".join(SHADOWING_SENTENCES)
-    
-    output_file = output_dir / "week1_day4_shadowing.mp3"
-    success = await generate_audio(shadowing_text, str(output_file))
+    output_file = output_dir / "week1_day5_story.mp3"
+    success = await generate_audio(DAY5_STORY_TEXT, str(output_file))
     
     if success:
         print("\n" + "=" * 50)
