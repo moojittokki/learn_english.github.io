@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Week 1 Day 4 - Speaking. Shadowing과 역할극으로 말하기 연습을 합니다.">
+    <title>Day 4: Speaking | Week 1 | The Second Self</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header scrolled" id="header">
+        <div class="container header-content">
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">🧠</span>
+                <span>The Second Self</span>
+            </a>
+            <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false">☰</button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../onboarding/philosophy.html">학습 철학</a></li>
+                    <li><a href="../onboarding/curriculum.html">커리큘럼</a></li>
+                    <li><a href="../index.html#curriculum" class="active">학습 시작</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Day Header -->
+    <section class="content-header">
+        <div class="container" style="max-width: 800px;">
+            <div class="breadcrumb">
+                <a href="../index.html">홈</a>
+                <span class="breadcrumb-sep">/</span>
+                <a href="index.html">Week 1</a>
+                <span class="breadcrumb-sep">/</span>
+                <span>Day 4</span>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-md);">
+                <span
+                    style="background: rgba(245, 87, 108, 0.2); color: var(--day-speaking); padding: var(--spacing-xs) var(--spacing-md); border-radius: var(--radius-full); font-size: var(--font-size-sm); font-weight: 600;">🗣️
+                    Speaking</span>
+                <span style="color: var(--color-text-tertiary);">Day 4 of 7</span>
+            </div>
+
+            <h1 style="margin-bottom: var(--spacing-sm);">Shadowing & 역할극 연습</h1>
+            <p class="hero-subtitle" style="margin: 0;">말하기 실력 집중 강화</p>
+        </div>
+    </section>
+
+    <!-- Content Body -->
+    <section class="content-body">
+        <div class="container" style="max-width: 800px;">
+
+            <!-- Learning Goals -->
+            <div class="glass-card mb-2xl" style="border-left: 3px solid var(--day-speaking);">
+                <h3
+                    style="margin-bottom: var(--spacing-md); display: flex; align-items: center; gap: var(--spacing-sm);">
+                    🎯 오늘의 학습 목표
+                </h3>
+                <ul
+                    style="padding-left: var(--spacing-lg); color: var(--color-text-secondary); line-height: 1.8; margin: 0;">
+                    <li>Shadowing으로 원어민 발음 따라하기</li>
+                    <li>역할극 대본으로 대화 연습하기</li>
+                    <li>나만의 자기소개 만들어 녹음하기</li>
+                </ul>
+            </div>
+
+            <!-- Part 1: Shadowing -->
+            <h2 class="mb-lg" style="display: flex; align-items: center; gap: var(--spacing-md);">
+                <span style="font-size: var(--font-size-2xl);">🎤</span>
+                Part 1: Shadowing 연습
+            </h2>
+
+            <div class="glass-card mb-xl"
+                style="background: rgba(245, 87, 108, 0.1); border: 1px solid rgba(245, 87, 108, 0.2);">
+                <p style="margin: 0; color: var(--color-text-secondary);">
+                    <strong style="color: var(--day-speaking);">Shadowing이란?</strong> 원어민의 음성을 듣고 <strong>거의
+                        동시에</strong> 따라 말하는 연습법입니다.
+                </p>
+            </div>
+
+            <div class="glass-card mb-xl">
+                <h4 style="color: var(--color-text-primary); margin-bottom: var(--spacing-md);">연습 방법</h4>
+                <ol
+                    style="padding-left: var(--spacing-lg); color: var(--color-text-secondary); line-height: 2; margin: 0;">
+                    <li>문장을 <strong>듣고</strong></li>
+                    <li><strong>바로 따라</strong> 말하세요 (0.5초 지연)</li>
+                    <li>같은 문장을 <strong>3번씩</strong> 반복하세요</li>
+                </ol>
+            </div>
+
+            <!-- Shadowing Audio Player -->
+            <div class="glass-card mb-xl"
+                style="text-align: center; background: rgba(245, 87, 108, 0.08); border: 1px solid rgba(245, 87, 108, 0.2);">
+                <div style="font-size: var(--font-size-2xl); margin-bottom: var(--spacing-md);">🎧</div>
+                <h4 style="margin-bottom: var(--spacing-md); color: var(--color-text-primary);">Shadowing Audio</h4>
+                <p
+                    style="color: var(--color-text-secondary); margin-bottom: var(--spacing-lg); font-size: var(--font-size-sm);">
+                    오디오를 재생하고 각 문장을 따라 말하세요
+                </p>
+
+                <audio id="shadowingAudio">
+                    <source src="../assets/audio/week1_day4_shadowing.mp3" type="audio/mpeg">
+                    브라우저가 오디오를 지원하지 않습니다.
+                </audio>
+
+                <div
+                    style="display: flex; justify-content: center; gap: var(--spacing-md); flex-wrap: wrap; margin-bottom: var(--spacing-md);">
+                    <button id="shPlayBtn" class="btn btn-primary">
+                        ▶️ 재생
+                    </button>
+                    <button id="shPauseBtn" class="btn btn-secondary">
+                        ⏸️ 일시정지
+                    </button>
+                    <button id="shRestartBtn" class="btn btn-secondary">
+                        🔄 처음부터
+                    </button>
+                </div>
+
+                <div style="display: flex; justify-content: center; gap: var(--spacing-sm); flex-wrap: wrap;">
+                    <button class="btn btn-secondary sh-speed-btn" data-speed="0.75">🐢 0.75x</button>
+                    <button class="btn btn-secondary sh-speed-btn active-speed" data-speed="1">🚶 1.0x</button>
+                    <button class="btn btn-secondary sh-speed-btn" data-speed="1.25">🏃 1.25x</button>
+                </div>
+
+                <p id="shSpeedIndicator"
+                    style="color: var(--color-text-tertiary); margin-top: var(--spacing-md); margin-bottom: 0; font-size: var(--font-size-sm);">
+                    현재 속도: 1.0x
+                </p>
+            </div>
+
+            <!-- Set 1: Self Introduction -->
+            <div class="glass-card mb-lg">
+                <h4 style="color: var(--color-accent-coral); margin-bottom: var(--spacing-lg);">Set 1: 자기소개</h4>
+                <div class="shadowing-list">
+                    <div class="shadowing-item">
+                        <span class="shadowing-number">1</span>
+                        <span class="shadowing-text">Hello! My name is James.</span>
+                        <div class="shadowing-checks">
+                            <label><input type="checkbox"> 1회</label>
+                            <label><input type="checkbox"> 2회</label>
+                            <label><input type="checkbox"> 3회</label>
+                        </div>
+                    </div>
+                    <div class="shadowing-item">
+                        <span class="shadowing-number">2</span>
+                        <span class="shadowing-text">I am 32 years old.</span>
+                        <div class="shadowing-checks">
+                            <label><input type="checkbox"> 1회</label>
+                            <label><input type="checkbox"> 2회</label>
+                            <label><input type="checkbox"> 3회</label>
+                        </div>
+                    </div>
+                    <div class="shadowing-item">
+                        <span class="shadowing-number">3</span>
+                        <span class="shadowing-text">I am a software engineer.</span>
+                        <div class="shadowing-checks">
+                            <label><input type="checkbox"> 1회</label>
+                            <label><input type="checkbox"> 2회</label>
+                            <label><input type="checkbox"> 3회</label>
+                        </div>
+                    </div>
+                    <div class="shadowing-item">
+                        <span class="shadowing-number">4</span>
+                        <span class="shadowing-text">I work at a tech company in Seoul.</span>
+                        <div class="shadowing-checks">
+                            <label><input type="checkbox"> 1회</label>
+                            <label><input type="checkbox"> 2회</label>
+                            <label><input type="checkbox"> 3회</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Set 2: Family Introduction -->
+            <div class="glass-card mb-lg">
+                <h4 style="color: var(--color-accent-coral); margin-bottom: var(--spacing-lg);">Set 2: 가족 소개</h4>
+                <div class="shadowing-list">
+                    <div class="shadowing-item">
+                        <span class="shadowing-number">5</span>
+                        <span class="shadowing-text">I am married.</span>
+                        <div class="shadowing-checks">
+                            <label><input type="checkbox"> 1회</label>
+                            <label><input type="checkbox"> 2회</label>
+                            <label><input type="checkbox"> 3회</label>
+                        </div>
+                    </div>
+                    <div class="shadowing-item">
+                        <span class="shadowing-number">6</span>
+                        <span class="shadowing-text">My wife's name is Yuna.</span>
+                        <div class="shadowing-checks">
+                            <label><input type="checkbox"> 1회</label>
+                            <label><input type="checkbox"> 2회</label>
+                            <label><input type="checkbox"> 3회</label>
+                        </div>
+                    </div>
+                    <div class="shadowing-item">
+                        <span class="shadowing-number">7</span>
+                        <span class="shadowing-text">She is a teacher.</span>
+                        <div class="shadowing-checks">
+                            <label><input type="checkbox"> 1회</label>
+                            <label><input type="checkbox"> 2회</label>
+                            <label><input type="checkbox"> 3회</label>
+                        </div>
+                    </div>
+                    <div class="shadowing-item">
+                        <span class="shadowing-number">8</span>
+                        <span class="shadowing-text">We have one daughter.</span>
+                        <div class="shadowing-checks">
+                            <label><input type="checkbox"> 1회</label>
+                            <label><input type="checkbox"> 2회</label>
+                            <label><input type="checkbox"> 3회</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Set 3: Emotions -->
+            <div class="glass-card mb-2xl">
+                <h4 style="color: var(--color-accent-coral); margin-bottom: var(--spacing-lg);">Set 3: 감정 표현</h4>
+                <div class="shadowing-list">
+                    <div class="shadowing-item">
+                        <span class="shadowing-number">9</span>
+                        <span class="shadowing-text">My family is small but happy.</span>
+                        <div class="shadowing-checks">
+                            <label><input type="checkbox"> 1회</label>
+                            <label><input type="checkbox"> 2회</label>
+                            <label><input type="checkbox"> 3회</label>
+                        </div>
+                    </div>
+                    <div class="shadowing-item">
+                        <span class="shadowing-number">10</span>
+                        <span class="shadowing-text">I love my life in Seoul!</span>
+                        <div class="shadowing-checks">
+                            <label><input type="checkbox"> 1회</label>
+                            <label><input type="checkbox"> 2회</label>
+                            <label><input type="checkbox"> 3회</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 2: Role Play -->
+            <h2 class="mb-lg" style="display: flex; align-items: center; gap: var(--spacing-md);">
+                <span style="font-size: var(--font-size-2xl);">🎭</span>
+                Part 2: 역할극 (Role Play)
+            </h2>
+
+            <div class="glass-card mb-xl"
+                style="background: rgba(102, 126, 234, 0.1); border: 1px solid rgba(102, 126, 234, 0.2);">
+                <h4 style="color: var(--color-accent-purple); margin-bottom: var(--spacing-sm);">🎬 상황: 새로운 사람 만나기</h4>
+                <p style="margin: 0; color: var(--color-text-secondary);">
+                    두 명이 처음 만나 자기소개를 나누는 상황입니다. A와 B 역할을 <strong>번갈아</strong> 연습해 보세요.
+                </p>
+            </div>
+
+            <div class="roleplay-container mb-xl">
+                <div class="roleplay-line">
+                    <div class="roleplay-speaker speaker-a">A</div>
+                    <div class="roleplay-content">
+                        <div class="roleplay-english">Hi! Nice to meet you. My name is James.</div>
+                        <div class="roleplay-korean">안녕하세요! 만나서 반가워요. 제 이름은 James입니다.</div>
+                    </div>
+                </div>
+                <div class="roleplay-line">
+                    <div class="roleplay-speaker speaker-b">B</div>
+                    <div class="roleplay-content">
+                        <div class="roleplay-english">Nice to meet you too, James. I'm Yuna. What do you do?</div>
+                        <div class="roleplay-korean">저도 만나서 반가워요, James. 저는 Yuna예요. 직업이 뭐예요?</div>
+                    </div>
+                </div>
+                <div class="roleplay-line">
+                    <div class="roleplay-speaker speaker-a">A</div>
+                    <div class="roleplay-content">
+                        <div class="roleplay-english">I'm a software engineer. I work at a tech company. How about you?
+                        </div>
+                        <div class="roleplay-korean">저는 소프트웨어 엔지니어예요. 기술 회사에서 일해요. 당신은요?</div>
+                    </div>
+                </div>
+                <div class="roleplay-line">
+                    <div class="roleplay-speaker speaker-b">B</div>
+                    <div class="roleplay-content">
+                        <div class="roleplay-english">I'm a teacher. I teach at an elementary school.</div>
+                        <div class="roleplay-korean">저는 선생님이에요. 초등학교에서 가르쳐요.</div>
+                    </div>
+                </div>
+                <div class="roleplay-line">
+                    <div class="roleplay-speaker speaker-a">A</div>
+                    <div class="roleplay-content">
+                        <div class="roleplay-english">That's great! Where are you from?</div>
+                        <div class="roleplay-korean">멋지네요! 어디 출신이세요?</div>
+                    </div>
+                </div>
+                <div class="roleplay-line">
+                    <div class="roleplay-speaker speaker-b">B</div>
+                    <div class="roleplay-content">
+                        <div class="roleplay-english">I'm from Korea. And you?</div>
+                        <div class="roleplay-korean">저는 한국 출신이에요. 당신은요?</div>
+                    </div>
+                </div>
+                <div class="roleplay-line">
+                    <div class="roleplay-speaker speaker-a">A</div>
+                    <div class="roleplay-content">
+                        <div class="roleplay-english">I'm from the United States, but I live in Korea now.</div>
+                        <div class="roleplay-korean">저는 미국 출신이지만, 지금은 한국에 살아요.</div>
+                    </div>
+                </div>
+                <div class="roleplay-line">
+                    <div class="roleplay-speaker speaker-b">B</div>
+                    <div class="roleplay-content">
+                        <div class="roleplay-english">Wonderful! It was nice talking to you.</div>
+                        <div class="roleplay-korean">멋지네요! 이야기 나눠서 좋았어요.</div>
+                    </div>
+                </div>
+                <div class="roleplay-line">
+                    <div class="roleplay-speaker speaker-a">A</div>
+                    <div class="roleplay-content">
+                        <div class="roleplay-english">You too! See you later!</div>
+                        <div class="roleplay-korean">저도요! 나중에 봐요!</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Role Play Checklist -->
+            <div class="glass-card mb-2xl">
+                <h4 style="color: var(--color-text-primary); margin-bottom: var(--spacing-lg);">역할극 체크리스트</h4>
+                <div style="display: grid; gap: var(--spacing-md);">
+                    <label
+                        style="display: flex; align-items: center; gap: var(--spacing-md); padding: var(--spacing-md); background: var(--glass-bg); border-radius: var(--radius-md); cursor: pointer;">
+                        <input type="checkbox" style="width: 20px; height: 20px;">
+                        <span style="color: var(--color-text-secondary);">A 역할 3번 연습</span>
+                    </label>
+                    <label
+                        style="display: flex; align-items: center; gap: var(--spacing-md); padding: var(--spacing-md); background: var(--glass-bg); border-radius: var(--radius-md); cursor: pointer;">
+                        <input type="checkbox" style="width: 20px; height: 20px;">
+                        <span style="color: var(--color-text-secondary);">B 역할 3번 연습</span>
+                    </label>
+                    <label
+                        style="display: flex; align-items: center; gap: var(--spacing-md); padding: var(--spacing-md); background: var(--glass-bg); border-radius: var(--radius-md); cursor: pointer;">
+                        <input type="checkbox" style="width: 20px; height: 20px;">
+                        <span style="color: var(--color-text-secondary);">혼자서 A-B 모두 연습</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Part 3: Create Your Own -->
+            <h2 class="mb-lg" style="display: flex; align-items: center; gap: var(--spacing-md);">
+                <span style="font-size: var(--font-size-2xl);">✍️</span>
+                Part 3: 나만의 자기소개 만들기
+            </h2>
+            <p class="mb-lg" style="color: var(--color-text-secondary);">아래 템플릿을 채워 <strong>나만의</strong> 자기소개를 만들어 보세요!
+            </p>
+
+            <div class="glass-card mb-xl">
+                <h4 style="color: var(--color-text-primary); margin-bottom: var(--spacing-lg);">📝 템플릿</h4>
+                <div class="template-container">
+                    <div class="template-line">
+                        <span>Hello! My name is </span>
+                        <input type="text" class="template-input" placeholder="이름">
+                        <span>.</span>
+                    </div>
+                    <div class="template-line">
+                        <span>I am </span>
+                        <input type="text" class="template-input template-input-small" placeholder="나이">
+                        <span> years old.</span>
+                    </div>
+                    <div class="template-line">
+                        <span>I am a/an </span>
+                        <input type="text" class="template-input" placeholder="직업">
+                        <span>.</span>
+                    </div>
+                    <div class="template-line">
+                        <span>I work at </span>
+                        <input type="text" class="template-input" placeholder="회사/장소">
+                        <span>.</span>
+                    </div>
+                    <div class="template-line" style="margin-top: var(--spacing-lg);">
+                        <span>I am from </span>
+                        <input type="text" class="template-input" placeholder="출신">
+                        <span>.</span>
+                    </div>
+                    <div class="template-line">
+                        <span>I live in </span>
+                        <input type="text" class="template-input" placeholder="현재 거주지">
+                        <span> now.</span>
+                    </div>
+                    <div class="template-line" style="margin-top: var(--spacing-lg);">
+                        <span>I love </span>
+                        <input type="text" class="template-input" placeholder="취미/관심사">
+                        <span>!</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 4: Recording -->
+            <h2 class="mb-lg" style="display: flex; align-items: center; gap: var(--spacing-md);">
+                <span style="font-size: var(--font-size-2xl);">🎙️</span>
+                Part 4: 녹음 & 자기 평가
+            </h2>
+
+            <div class="glass-card mb-xl">
+                <h4 style="color: var(--color-text-primary); margin-bottom: var(--spacing-lg);">녹음 방법</h4>
+                <ol
+                    style="padding-left: var(--spacing-lg); color: var(--color-text-secondary); line-height: 2; margin: 0;">
+                    <li>스마트폰 녹음 앱을 실행하세요</li>
+                    <li>나만의 자기소개를 <strong>소리 내어</strong> 읽으세요</li>
+                    <li>녹음을 멈추고 <strong>다시 들어보세요</strong></li>
+                </ol>
+            </div>
+
+            <div class="glass-card mb-2xl">
+                <h4 style="color: var(--color-text-primary); margin-bottom: var(--spacing-lg);">자기 평가 체크리스트</h4>
+                <div class="evaluation-grid">
+                    <div class="evaluation-item">
+                        <span class="evaluation-label">발음이 명확한가?</span>
+                        <div class="star-rating" data-rating="0">
+                            <span class="star" data-value="1">☆</span>
+                            <span class="star" data-value="2">☆</span>
+                            <span class="star" data-value="3">☆</span>
+                            <span class="star" data-value="4">☆</span>
+                            <span class="star" data-value="5">☆</span>
+                        </div>
+                    </div>
+                    <div class="evaluation-item">
+                        <span class="evaluation-label">말하는 속도가 자연스러운가?</span>
+                        <div class="star-rating" data-rating="0">
+                            <span class="star" data-value="1">☆</span>
+                            <span class="star" data-value="2">☆</span>
+                            <span class="star" data-value="3">☆</span>
+                            <span class="star" data-value="4">☆</span>
+                            <span class="star" data-value="5">☆</span>
+                        </div>
+                    </div>
+                    <div class="evaluation-item">
+                        <span class="evaluation-label">자신감 있게 말했는가?</span>
+                        <div class="star-rating" data-rating="0">
+                            <span class="star" data-value="1">☆</span>
+                            <span class="star" data-value="2">☆</span>
+                            <span class="star" data-value="3">☆</span>
+                            <span class="star" data-value="4">☆</span>
+                            <span class="star" data-value="5">☆</span>
+                        </div>
+                    </div>
+                    <div class="evaluation-item">
+                        <span class="evaluation-label">문법(be동사)을 정확히 사용했는가?</span>
+                        <div class="star-rating" data-rating="0">
+                            <span class="star" data-value="1">☆</span>
+                            <span class="star" data-value="2">☆</span>
+                            <span class="star" data-value="3">☆</span>
+                            <span class="star" data-value="4">☆</span>
+                            <span class="star" data-value="5">☆</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: var(--spacing-xl);">
+                    <h5 style="color: var(--color-text-primary); margin-bottom: var(--spacing-md);">개선할 점 메모</h5>
+                    <textarea class="improvement-notes" placeholder="개선할 점을 적어보세요..."></textarea>
+                </div>
+            </div>
+
+            <!-- Today's Assignment -->
+            <div class="glass-card text-center"
+                style="background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%); border: none; padding: var(--spacing-2xl);">
+                <h3 style="color: white; margin-bottom: var(--spacing-lg);">🏠 오늘의 과제</h3>
+                <div style="text-align: left; max-width: 400px; margin: 0 auto;">
+                    <div
+                        style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-md); color: white;">
+                        <span>🎤</span>
+                        <span>Shadowing 연습 <strong>전부 완료</strong>하기</span>
+                    </div>
+                    <div
+                        style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-md); color: white;">
+                        <span>🎭</span>
+                        <span>역할극 <strong>A/B 모두</strong> 연습하기</span>
+                    </div>
+                    <div
+                        style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-md); color: white;">
+                        <span>📝</span>
+                        <span>나만의 자기소개 <strong>작성 후 녹음</strong>하기</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: var(--spacing-md); color: white;">
+                        <span>🔊</span>
+                        <span>녹음을 듣고 <strong>자기 평가</strong> 작성하기</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Page Navigation -->
+    <div class="container" style="max-width: 800px;">
+        <nav class="page-nav">
+            <a href="day-3.html" class="page-nav-link">← Day 3: Vocabulary</a>
+            <a href="day-5.html" class="page-nav-link">Day 5: Story 2 →</a>
+        </nav>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 The Second Self Project. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+        // Star rating functionality
+        document.querySelectorAll('.star-rating').forEach(rating => {
+            const stars = rating.querySelectorAll('.star');
+            stars.forEach(star => {
+                star.addEventListener('click', () => {
+                    const value = parseInt(star.dataset.value);
+                    rating.dataset.rating = value;
+                    stars.forEach((s, index) => {
+                        s.textContent = index < value ? '★' : '☆';
+                        s.style.color = index < value ? 'var(--day-speaking)' : 'var(--color-text-tertiary)';
+                    });
+                });
+            });
+        });
+
+        // Shadowing Audio Player
+        const shAudio = document.getElementById('shadowingAudio');
+        const shPlayBtn = document.getElementById('shPlayBtn');
+        const shPauseBtn = document.getElementById('shPauseBtn');
+        const shRestartBtn = document.getElementById('shRestartBtn');
+        const shSpeedIndicator = document.getElementById('shSpeedIndicator');
+        const shSpeedBtns = document.querySelectorAll('.sh-speed-btn');
+
+        shPlayBtn.addEventListener('click', () => shAudio.play());
+        shPauseBtn.addEventListener('click', () => shAudio.pause());
+        shRestartBtn.addEventListener('click', () => {
+            shAudio.currentTime = 0;
+            shAudio.play();
+        });
+
+        shSpeedBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const speed = parseFloat(btn.dataset.speed);
+                shAudio.playbackRate = speed;
+                shSpeedIndicator.textContent = `현재 속도: ${speed}x`;
+                shSpeedBtns.forEach(b => b.classList.remove('active-speed'));
+                btn.classList.add('active-speed');
+            });
+        });
+    </script>
+
+    <style>
+        /* Shadowing List */
+        .shadowing-list {
+            display: grid;
+            gap: var(--spacing-md);
+        }
+
+        .shadowing-item {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+            padding: var(--spacing-md);
+            background: var(--glass-bg);
+            border-radius: var(--radius-md);
+            flex-wrap: wrap;
+        }
+
+        .shadowing-number {
+            background: var(--gradient-warm);
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: var(--font-size-sm);
+            flex-shrink: 0;
+        }
+
+        .shadowing-text {
+            flex: 1;
+            color: var(--color-text-primary);
+            font-weight: 500;
+            min-width: 200px;
+        }
+
+        .shadowing-checks {
+            display: flex;
+            gap: var(--spacing-md);
+        }
+
+        .shadowing-checks label {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+            color: var(--color-text-tertiary);
+            font-size: var(--font-size-sm);
+            cursor: pointer;
+        }
+
+        .shadowing-checks input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+        }
+
+        /* Role Play */
+        .roleplay-container {
+            display: grid;
+            gap: var(--spacing-md);
+        }
+
+        .roleplay-line {
+            display: flex;
+            gap: var(--spacing-md);
+            padding: var(--spacing-md);
+            background: var(--glass-bg);
+            border-radius: var(--radius-md);
+        }
+
+        .roleplay-speaker {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .speaker-a {
+            background: var(--gradient-primary);
+            color: white;
+        }
+
+        .speaker-b {
+            background: var(--gradient-success);
+            color: white;
+        }
+
+        .roleplay-content {
+            flex: 1;
+        }
+
+        .roleplay-english {
+            color: var(--color-text-primary);
+            font-weight: 500;
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .roleplay-korean {
+            color: var(--color-text-tertiary);
+            font-size: var(--font-size-sm);
+        }
+
+        /* Template */
+        .template-container {
+            display: grid;
+            gap: var(--spacing-md);
+        }
+
+        .template-line {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            flex-wrap: wrap;
+            color: var(--color-text-primary);
+        }
+
+        .template-input {
+            padding: var(--spacing-sm) var(--spacing-md);
+            background: var(--color-bg-secondary);
+            border: 2px solid var(--glass-border);
+            border-radius: var(--radius-sm);
+            color: var(--color-text-primary);
+            font-family: var(--font-body);
+            font-size: var(--font-size-base);
+            min-width: 150px;
+            transition: all var(--transition-fast);
+        }
+
+        .template-input-small {
+            min-width: 60px;
+            width: 80px;
+        }
+
+        .template-input:focus {
+            outline: none;
+            border-color: var(--day-speaking);
+            background: rgba(245, 87, 108, 0.1);
+        }
+
+        .template-input::placeholder {
+            color: var(--color-text-muted);
+        }
+
+        /* Evaluation */
+        .evaluation-grid {
+            display: grid;
+            gap: var(--spacing-md);
+        }
+
+        .evaluation-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: var(--spacing-md);
+            padding: var(--spacing-md);
+            background: var(--glass-bg);
+            border-radius: var(--radius-md);
+            flex-wrap: wrap;
+        }
+
+        .evaluation-label {
+            color: var(--color-text-secondary);
+        }
+
+        .star-rating {
+            display: flex;
+            gap: var(--spacing-xs);
+        }
+
+        .star {
+            font-size: var(--font-size-xl);
+            color: var(--color-text-tertiary);
+            cursor: pointer;
+            transition: color var(--transition-fast);
+        }
+
+        .star:hover {
+            color: var(--day-speaking);
+        }
+
+        .improvement-notes {
+            width: 100%;
+            min-height: 100px;
+            padding: var(--spacing-md);
+            background: var(--color-bg-secondary);
+            border: 2px solid var(--glass-border);
+            border-radius: var(--radius-md);
+            color: var(--color-text-primary);
+            font-family: var(--font-body);
+            font-size: var(--font-size-base);
+            resize: vertical;
+            transition: border-color var(--transition-fast);
+        }
+
+        .improvement-notes:focus {
+            outline: none;
+            border-color: var(--day-speaking);
+        }
+
+        .improvement-notes::placeholder {
+            color: var(--color-text-muted);
+        }
+
+        /* Audio Player Styles */
+        .sh-speed-btn.active-speed {
+            background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%) !important;
+            color: white !important;
+            border-color: transparent !important;
+        }
+
+        audio {
+            display: none;
+        }
+
+        @media (max-width: 600px) {
+            .shadowing-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .shadowing-checks {
+                width: 100%;
+                justify-content: space-around;
+            }
+
+            .evaluation-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</body>
+
+</html>

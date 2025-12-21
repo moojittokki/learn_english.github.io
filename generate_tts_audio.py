@@ -57,6 +57,20 @@ We have one daughter. Her name is Sophie. She is 5 years old. She is very cute a
 My family is small but happy. I love my life in Seoul!
 """
 
+# Day 4 Shadowing 문장들 (개별 문장, 약간의 간격을 두고 천천히)
+SHADOWING_SENTENCES = [
+    "Hello! My name is James.",
+    "I am 32 years old.",
+    "I am a software engineer.",
+    "I work at a tech company in Seoul.",
+    "I am married.",
+    "My wife's name is Yuna.",
+    "She is a teacher.",
+    "We have one daughter.",
+    "My family is small but happy.",
+    "I love my life in Seoul!"
+]
+
 
 async def generate_audio(text: str, output_path: str):
     """텍스트를 오디오로 변환하여 저장"""
@@ -123,12 +137,15 @@ async def main():
     output_dir.mkdir(parents=True, exist_ok=True)
     
     print("=" * 50)
-    print("🎧 Day 2 Listening 오디오 생성")
+    print("🎤 Day 4 Shadowing 오디오 생성")
     print("=" * 50)
     
-    # 스토리 오디오 생성
-    output_file = output_dir / "week1_day2_story.mp3"
-    success = await generate_audio(STORY_TEXT, str(output_file))
+    # Shadowing 문장들을 하나의 텍스트로 합치기 (문장 사이에 쉼표로 구분)
+    # 각 문장 후 약간의 멈춤을 위해 줄바꿈 추가
+    shadowing_text = "\n\n".join(SHADOWING_SENTENCES)
+    
+    output_file = output_dir / "week1_day4_shadowing.mp3"
+    success = await generate_audio(shadowing_text, str(output_file))
     
     if success:
         print("\n" + "=" * 50)
