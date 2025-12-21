@@ -65,9 +65,9 @@ async def generate_audio(text: str, output_path: str):
     audio_chunks = []
     
     async with client.aio.live.connect(model=MODEL, config=CONFIG) as session:
-        # 텍스트 전송
+        # 텍스트 전송 - 자연스러운 대화 톤으로
         await session.send(
-            input=f"Please read this text slowly and clearly, at 0.8x normal speaking speed. Read it as if you're teaching English to someone: {text}",
+            input=f"Read this text naturally in a warm, conversational tone. Speak as if you're a friendly American man casually introducing himself to a new friend. Use natural rhythm, linking between words, and authentic emotion: {text}",
             end_of_turn=True
         )
         
