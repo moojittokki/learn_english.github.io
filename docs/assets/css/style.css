@@ -1263,3 +1263,45 @@ a:hover {
   background-size: 200% 100%;
   animation: shimmer 1.5s infinite;
 }
+
+/* ---------- Translation Toggle ---------- */
+.translation-toggle {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.translation-toggle summary {
+  outline: none;
+}
+
+.translation-toggle summary::-webkit-details-marker {
+  display: none;
+}
+
+.translation-toggle summary:hover {
+  background: rgba(102, 126, 234, 0.15) !important;
+}
+
+.translation-toggle[open] summary {
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
+.translation-toggle[open] .toggle-arrow {
+  transform: rotate(90deg);
+}
+
+.translation-toggle .translation-content {
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

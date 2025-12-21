@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="The Second Self Week 1 - Identity & Routines. be동사와 일반동사 현재형을 배우고 자기소개와 하루 일과를 표현합니다.">
+    <title>Week 1: Identity & Routines | The Second Self</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header scrolled" id="header">
+        <div class="container header-content">
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">🧠</span>
+                <span>The Second Self</span>
+            </a>
+            <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false">☰</button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../onboarding/philosophy.html">학습 철학</a></li>
+                    <li><a href="../onboarding/curriculum.html">커리큘럼</a></li>
+                    <li><a href="../index.html#curriculum" class="active">학습 시작</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Week Header -->
+    <section class="content-header" style="padding-bottom: var(--spacing-3xl);">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">홈</a>
+                <span class="breadcrumb-sep">/</span>
+                <a href="../index.html#curriculum">커리큘럼</a>
+                <span class="breadcrumb-sep">/</span>
+                <span>Week 1</span>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-lg);">
+                <span
+                    style="background: var(--phase1-gradient); color: white; padding: var(--spacing-xs) var(--spacing-md); border-radius: var(--radius-full); font-size: var(--font-size-sm); font-weight: 600;">Phase
+                    1</span>
+                <span style="color: var(--color-text-tertiary);">Week 1 of 12</span>
+            </div>
+
+            <h1 style="margin-bottom: var(--spacing-md);">
+                <span class="gradient-text">Identity & Routines</span>
+            </h1>
+            <p class="hero-subtitle" style="margin: 0;">나와 나의 하루</p>
+        </div>
+    </section>
+
+    <!-- Week Overview -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container" style="max-width: 1000px;">
+
+            <!-- Week Info Card -->
+            <div class="glass-card mb-2xl">
+                <div
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--spacing-xl);">
+                    <div>
+                        <h4
+                            style="color: var(--color-text-tertiary); font-size: var(--font-size-sm); font-weight: 500; margin-bottom: var(--spacing-sm);">
+                            📚 이번 주 주제</h4>
+                        <p style="color: var(--color-text-primary); margin: 0; font-size: var(--font-size-lg);">자기소개,
+                            직업, 가족, 하루 일과</p>
+                    </div>
+                    <div>
+                        <h4
+                            style="color: var(--color-text-tertiary); font-size: var(--font-size-sm); font-weight: 500; margin-bottom: var(--spacing-sm);">
+                            🔤 문법 포인트</h4>
+                        <p style="color: var(--color-text-primary); margin: 0; font-size: var(--font-size-lg);">be동사,
+                            일반동사 현재형, 빈도 부사</p>
+                    </div>
+                    <div>
+                        <h4
+                            style="color: var(--color-text-tertiary); font-size: var(--font-size-sm); font-weight: 500; margin-bottom: var(--spacing-sm);">
+                            👥 등장인물</h4>
+                        <p style="color: var(--color-text-primary); margin: 0; font-size: var(--font-size-lg);">James,
+                            Yuna, Sophie</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learning Goals -->
+            <div class="glass-card mb-2xl" style="border-left: 3px solid var(--phase1-color);">
+                <h3
+                    style="margin-bottom: var(--spacing-lg); display: flex; align-items: center; gap: var(--spacing-sm);">
+                    🎯 이번 주 학습 목표
+                </h3>
+                <ul
+                    style="padding-left: var(--spacing-lg); color: var(--color-text-secondary); line-height: 2; margin: 0;">
+                    <li>be동사(am, is, are)를 사용해 <strong style="color: var(--color-text-primary);">자기소개</strong>하기</li>
+                    <li>직업, 국적, 가족을 <strong style="color: var(--color-text-primary);">영어로 설명</strong>하기</li>
+                    <li>일반동사 현재형으로 <strong style="color: var(--color-text-primary);">하루 일과</strong> 표현하기</li>
+                    <li>빈도 부사(always, usually, sometimes, never)를 <strong style="color: var(--color-text-primary);">올바른
+                            위치</strong>에 사용하기</li>
+                </ul>
+            </div>
+
+            <!-- Day Cards -->
+            <h2 class="mb-lg" style="display: flex; align-items: center; gap: var(--spacing-md);">
+                <span style="font-size: var(--font-size-2xl);">📅</span>
+                일별 학습
+            </h2>
+
+            <div class="day-grid"
+                style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-bottom: var(--spacing-2xl);">
+                <a href="day-1.html" class="day-card story card-link">
+                    <div class="day-icon">📖</div>
+                    <div class="day-title">Day 1</div>
+                    <div class="day-subtitle">Story: Meet James</div>
+                </a>
+
+                <a href="day-2.html" class="day-card listening card-link">
+                    <div class="day-icon">🔊</div>
+                    <div class="day-title">Day 2</div>
+                    <div class="day-subtitle">Listening</div>
+                </a>
+
+                <a href="day-3.html" class="day-card vocabulary card-link">
+                    <div class="day-icon">📝</div>
+                    <div class="day-title">Day 3</div>
+                    <div class="day-subtitle">Vocabulary</div>
+                </a>
+
+                <a href="day-4.html" class="day-card speaking card-link">
+                    <div class="day-icon">🗣️</div>
+                    <div class="day-title">Day 4</div>
+                    <div class="day-subtitle">Speaking</div>
+                </a>
+
+                <a href="day-5.html" class="day-card story card-link">
+                    <div class="day-icon">📖</div>
+                    <div class="day-title">Day 5</div>
+                    <div class="day-subtitle">Story: A Day in James's Life</div>
+                </a>
+
+                <a href="day-6.html" class="day-card writing card-link">
+                    <div class="day-icon">✍️</div>
+                    <div class="day-title">Day 6</div>
+                    <div class="day-subtitle">Writing</div>
+                </a>
+
+                <a href="day-7.html" class="day-card review card-link">
+                    <div class="day-icon">🔄</div>
+                    <div class="day-title">Day 7</div>
+                    <div class="day-subtitle">Weekly Review</div>
+                </a>
+            </div>
+
+            <!-- Grammar Preview -->
+            <h2 class="mb-lg" style="display: flex; align-items: center; gap: var(--spacing-md);">
+                <span style="font-size: var(--font-size-2xl);">📌</span>
+                핵심 문법 미리보기
+            </h2>
+
+            <div style="display: grid; gap: var(--spacing-lg); margin-bottom: var(--spacing-2xl);">
+                <!-- be동사 -->
+                <div class="glass-card">
+                    <h4 style="color: var(--phase1-color); margin-bottom: var(--spacing-md);">be동사 (am, is, are)</h4>
+                    <div style="overflow-x: auto;">
+                        <table style="width: 100%; border-collapse: collapse; color: var(--color-text-secondary);">
+                            <thead>
+                                <tr style="border-bottom: 1px solid var(--glass-border);">
+                                    <th
+                                        style="text-align: left; padding: var(--spacing-sm) var(--spacing-md); color: var(--color-text-tertiary);">
+                                        주어</th>
+                                    <th
+                                        style="text-align: left; padding: var(--spacing-sm) var(--spacing-md); color: var(--color-text-tertiary);">
+                                        be동사</th>
+                                    <th
+                                        style="text-align: left; padding: var(--spacing-sm) var(--spacing-md); color: var(--color-text-tertiary);">
+                                        예문</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="border-bottom: 1px solid var(--glass-border);">
+                                    <td style="padding: var(--spacing-sm) var(--spacing-md);">I</td>
+                                    <td
+                                        style="padding: var(--spacing-sm) var(--spacing-md); color: var(--color-accent-blue); font-weight: 600;">
+                                        am</td>
+                                    <td style="padding: var(--spacing-sm) var(--spacing-md);">I <strong>am</strong> a
+                                        student.</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid var(--glass-border);">
+                                    <td style="padding: var(--spacing-sm) var(--spacing-md);">You / We / They</td>
+                                    <td
+                                        style="padding: var(--spacing-sm) var(--spacing-md); color: var(--color-accent-blue); font-weight: 600;">
+                                        are</td>
+                                    <td style="padding: var(--spacing-sm) var(--spacing-md);">You <strong>are</strong>
+                                        my friend.</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: var(--spacing-sm) var(--spacing-md);">He / She / It</td>
+                                    <td
+                                        style="padding: var(--spacing-sm) var(--spacing-md); color: var(--color-accent-blue); font-weight: 600;">
+                                        is</td>
+                                    <td style="padding: var(--spacing-sm) var(--spacing-md);">She <strong>is</strong>
+                                        Korean.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 빈도 부사 -->
+                <div class="glass-card">
+                    <h4 style="color: var(--phase1-color); margin-bottom: var(--spacing-md);">빈도 부사 (Frequency Adverbs)
+                    </h4>
+                    <div
+                        style="display: flex; flex-wrap: wrap; gap: var(--spacing-sm); margin-bottom: var(--spacing-md);">
+                        <span
+                            style="background: var(--gradient-success); color: white; padding: var(--spacing-xs) var(--spacing-md); border-radius: var(--radius-full); font-size: var(--font-size-sm);">always
+                            100%</span>
+                        <span
+                            style="background: var(--phase1-gradient); color: white; padding: var(--spacing-xs) var(--spacing-md); border-radius: var(--radius-full); font-size: var(--font-size-sm);">usually
+                            80%</span>
+                        <span
+                            style="background: var(--phase2-gradient); color: white; padding: var(--spacing-xs) var(--spacing-md); border-radius: var(--radius-full); font-size: var(--font-size-sm);">often
+                            60%</span>
+                        <span
+                            style="background: var(--gradient-warm); color: white; padding: var(--spacing-xs) var(--spacing-md); border-radius: var(--radius-full); font-size: var(--font-size-sm);">sometimes
+                            40%</span>
+                        <span
+                            style="background: linear-gradient(135deg, #718096, #4a5568); color: white; padding: var(--spacing-xs) var(--spacing-md); border-radius: var(--radius-full); font-size: var(--font-size-sm);">never
+                            0%</span>
+                    </div>
+                    <p style="color: var(--color-text-secondary); margin: 0; font-size: var(--font-size-sm);">
+                        💡 <strong>위치</strong>: be동사 <em>뒤</em>, 일반동사 <em>앞</em> → He <strong>always wakes up</strong>
+                        at 7 AM.
+                    </p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="glass-card text-center"
+                style="background: var(--phase1-gradient); border: none; padding: var(--spacing-2xl);">
+                <h3 style="color: white; margin-bottom: var(--spacing-md);">🚀 학습을 시작하세요!</h3>
+                <p style="color: rgba(255,255,255,0.9); margin-bottom: var(--spacing-lg);">
+                    Day 1부터 차근차근 진행해 보세요.
+                </p>
+                <a href="day-1.html" class="btn btn-secondary btn-lg"
+                    style="background: white; color: var(--phase1-color); border: none;">
+                    Day 1 시작하기 →
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Page Navigation -->
+    <div class="container" style="max-width: 1000px;">
+        <nav class="page-nav">
+            <a href="../index.html" class="page-nav-link">← 대시보드</a>
+            <a href="../week-2/index.html" class="page-nav-link">Week 2 →</a>
+        </nav>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 The Second Self Project. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
