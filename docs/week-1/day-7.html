@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Week 1 Day 7 - Weekly Review. 1주차 총정리 및 복습">
+    <title>Day 7: Weekly Review | Week 1 | The Second Self</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header scrolled" id="header">
+        <div class="container header-content">
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">🧠</span>
+                <span>The Second Self</span>
+            </a>
+            <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false">☰</button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../onboarding/philosophy.html">학습 철학</a></li>
+                    <li><a href="../onboarding/curriculum.html">커리큘럼</a></li>
+                    <li><a href="../index.html#curriculum" class="active">학습 시작</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Day Header -->
+    <section class="content-header">
+        <div class="container" style="max-width: 800px;">
+            <div class="breadcrumb">
+                <a href="../index.html">홈</a>
+                <span class="breadcrumb-sep">/</span>
+                <a href="index.html">Week 1</a>
+                <span class="breadcrumb-sep">/</span>
+                <span>Day 7</span>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-md);">
+                <span
+                    style="background: rgba(0, 242, 254, 0.2); color: var(--day-review); padding: var(--spacing-xs) var(--spacing-md); border-radius: var(--radius-full); font-size: var(--font-size-sm); font-weight: 600;">🔄
+                    Weekly Review</span>
+                <span style="color: var(--color-text-tertiary);">Day 7 of 7</span>
+            </div>
+
+            <h1 style="margin-bottom: var(--spacing-sm);">Week 1 총정리</h1>
+            <p class="hero-subtitle" style="margin: 0;">Identity & Routines 복습</p>
+        </div>
+    </section>
+
+    <!-- Content Body -->
+    <section class="content-body">
+        <div class="container" style="max-width: 800px;">
+
+            <!-- Learning Goals -->
+            <div class="glass-card mb-2xl" style="border-left: 3px solid var(--day-review);">
+                <h3
+                    style="margin-bottom: var(--spacing-md); display: flex; align-items: center; gap: var(--spacing-sm);">
+                    🎯 오늘의 학습 목표
+                </h3>
+                <ul
+                    style="padding-left: var(--spacing-lg); color: var(--color-text-secondary); line-height: 1.8; margin: 0;">
+                    <li>Week 1 핵심 어휘 복습 및 퀴즈</li>
+                    <li>Day 1 & Day 5 스토리 핵심 문장 복습</li>
+                    <li>Can-Do Statement로 학습 성과 점검</li>
+                </ul>
+            </div>
+
+            <!-- Part 1: Vocabulary Quiz -->
+            <h2 class="mb-lg" style="display: flex; align-items: center; gap: var(--spacing-md);">
+                <span style="font-size: var(--font-size-2xl);">📚</span>
+                Part 1: 누적 어휘 퀴즈
+            </h2>
+
+            <div class="glass-card mb-xl"
+                style="background: rgba(0, 242, 254, 0.08); border: 1px solid rgba(0, 242, 254, 0.2);">
+                <p style="margin: 0; color: var(--color-text-secondary);">
+                    <strong style="color: var(--day-review);">미션:</strong> 빈칸에 알맞은 영어 단어를 입력하세요.
+                </p>
+            </div>
+
+            <div class="glass-card mb-2xl" id="vocabQuiz">
+                <div class="vocab-question" data-answer="engineer">
+                    <p class="quiz-q-text"><strong>1.</strong> He is a software _________. <span
+                            class="hint">(엔지니어)</span></p>
+                    <input type="text" class="vocab-input" placeholder="영어 단어 입력...">
+                    <div class="vocab-feedback"></div>
+                </div>
+
+                <div class="vocab-question" data-answer="company">
+                    <p class="quiz-q-text"><strong>2.</strong> I work at a tech _________. <span
+                            class="hint">(회사)</span></p>
+                    <input type="text" class="vocab-input" placeholder="영어 단어 입력...">
+                    <div class="vocab-feedback"></div>
+                </div>
+
+                <div class="vocab-question" data-answer="family">
+                    <p class="quiz-q-text"><strong>3.</strong> My _________ is small but happy. <span
+                            class="hint">(가족)</span></p>
+                    <input type="text" class="vocab-input" placeholder="영어 단어 입력...">
+                    <div class="vocab-feedback"></div>
+                </div>
+
+                <div class="vocab-question" data-answer="elementary">
+                    <p class="quiz-q-text"><strong>4.</strong> She is a teacher at an _________ school. <span
+                            class="hint">(초등)</span></p>
+                    <input type="text" class="vocab-input" placeholder="영어 단어 입력...">
+                    <div class="vocab-feedback"></div>
+                </div>
+
+                <div class="vocab-question" data-answer="daughter">
+                    <p class="quiz-q-text"><strong>5.</strong> We have one _________. <span class="hint">(딸)</span></p>
+                    <input type="text" class="vocab-input" placeholder="영어 단어 입력...">
+                    <div class="vocab-feedback"></div>
+                </div>
+
+                <div class="vocab-question" data-answer="love">
+                    <p class="quiz-q-text"><strong>6.</strong> I _________ my life in Seoul. <span
+                            class="hint">(사랑하다)</span></p>
+                    <input type="text" class="vocab-input" placeholder="영어 단어 입력...">
+                    <div class="vocab-feedback"></div>
+                </div>
+
+                <div class="vocab-question" data-answer="energetic">
+                    <p class="quiz-q-text"><strong>7.</strong> She is very cute and _________. <span
+                            class="hint">(활발한)</span></p>
+                    <input type="text" class="vocab-input" placeholder="영어 단어 입력...">
+                    <div class="vocab-feedback"></div>
+                </div>
+
+                <div class="vocab-question" data-answer="wake">
+                    <p class="quiz-q-text"><strong>8.</strong> I usually _________ up at 7 AM. <span
+                            class="hint">(일어나다)</span></p>
+                    <input type="text" class="vocab-input" placeholder="영어 단어 입력...">
+                    <div class="vocab-feedback"></div>
+                </div>
+
+                <div class="vocab-question" data-answer="usually">
+                    <p class="quiz-q-text"><strong>9.</strong> He _________ takes the subway. <span
+                            class="hint">(보통)</span></p>
+                    <input type="text" class="vocab-input" placeholder="영어 단어 입력...">
+                    <div class="vocab-feedback"></div>
+                </div>
+
+                <div class="vocab-question" data-answer="sometimes">
+                    <p class="quiz-q-text"><strong>10.</strong> She _________ goes to a restaurant. <span
+                            class="hint">(가끔)</span></p>
+                    <input type="text" class="vocab-input" placeholder="영어 단어 입력...">
+                    <div class="vocab-feedback"></div>
+                </div>
+
+                <div style="text-align: center; margin-top: var(--spacing-xl);">
+                    <button class="btn btn-primary" id="checkVocabBtn">✅ 정답 확인</button>
+                    <button class="btn btn-secondary" id="showVocabBtn" style="margin-left: var(--spacing-md);">💡 정답
+                        보기</button>
+                </div>
+                <div id="vocabResult" style="display: none; margin-top: var(--spacing-lg);"></div>
+            </div>
+
+            <!-- Part 2: Key Sentences Review -->
+            <h2 class="mb-lg" style="display: flex; align-items: center; gap: var(--spacing-md);">
+                <span style="font-size: var(--font-size-2xl);">📖</span>
+                Part 2: 핵심 문장 복습
+            </h2>
+
+            <div class="glass-card mb-xl">
+                <h4 style="color: var(--day-story); margin-bottom: var(--spacing-lg);">📘 Day 1 스토리 (자기소개)</h4>
+                <div class="sentence-table">
+                    <div class="sentence-row">
+                        <span class="sentence-num">1</span>
+                        <span class="sentence-en">My name is James.</span>
+                        <span class="sentence-ko">제 이름은 James입니다.</span>
+                    </div>
+                    <div class="sentence-row">
+                        <span class="sentence-num">2</span>
+                        <span class="sentence-en">I am a software engineer.</span>
+                        <span class="sentence-ko">저는 소프트웨어 엔지니어입니다.</span>
+                    </div>
+                    <div class="sentence-row">
+                        <span class="sentence-num">3</span>
+                        <span class="sentence-en">I am from the United States.</span>
+                        <span class="sentence-ko">저는 미국 출신입니다.</span>
+                    </div>
+                    <div class="sentence-row">
+                        <span class="sentence-num">4</span>
+                        <span class="sentence-en">My wife's name is Yuna.</span>
+                        <span class="sentence-ko">제 아내 이름은 유나입니다.</span>
+                    </div>
+                    <div class="sentence-row">
+                        <span class="sentence-num">5</span>
+                        <span class="sentence-en">My family is small but happy.</span>
+                        <span class="sentence-ko">우리 가족은 작지만 행복합니다.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card mb-xl">
+                <h4 style="color: var(--day-story); margin-bottom: var(--spacing-lg);">📗 Day 5 스토리 (하루 일과)</h4>
+                <div class="sentence-table">
+                    <div class="sentence-row">
+                        <span class="sentence-num">1</span>
+                        <span class="sentence-en">James <span class="highlight">always wakes up</span> at 7 AM.</span>
+                        <span class="sentence-ko">James는 항상 7시에 일어납니다.</span>
+                    </div>
+                    <div class="sentence-row">
+                        <span class="sentence-num">2</span>
+                        <span class="sentence-en">He <span class="highlight">usually takes</span> the subway.</span>
+                        <span class="sentence-ko">그는 보통 지하철을 탑니다.</span>
+                    </div>
+                    <div class="sentence-row">
+                        <span class="sentence-num">3</span>
+                        <span class="sentence-en">He <span class="highlight">checks</span> his emails first.</span>
+                        <span class="sentence-ko">그는 먼저 이메일을 확인합니다.</span>
+                    </div>
+                    <div class="sentence-row">
+                        <span class="sentence-num">4</span>
+                        <span class="sentence-en">He <span class="highlight">often reads</span> books with
+                            Sophie.</span>
+                        <span class="sentence-ko">그는 자주 Sophie와 책을 읽습니다.</span>
+                    </div>
+                    <div class="sentence-row">
+                        <span class="sentence-num">5</span>
+                        <span class="sentence-en">He <span class="highlight">never gets</span> bored!</span>
+                        <span class="sentence-ko">그는 절대 지루해하지 않습니다!</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card mb-2xl"
+                style="background: rgba(0, 242, 254, 0.08); border: 1px solid rgba(0, 242, 254, 0.2);">
+                <h4 style="color: var(--day-review); margin-bottom: var(--spacing-md);">📋 복습 활동</h4>
+                <div class="checklist">
+                    <label class="checklist-item">
+                        <input type="checkbox">
+                        <span>위 문장들을 <strong>3번씩</strong> 소리 내어 읽기</span>
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox">
+                        <span>한국어만 보고 <strong>영어로</strong> 말해보기</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Part 3: Can-Do Statement -->
+            <h2 class="mb-lg" style="display: flex; align-items: center; gap: var(--spacing-md);">
+                <span style="font-size: var(--font-size-2xl);">✅</span>
+                Part 3: Can-Do Statement
+            </h2>
+
+            <div class="glass-card mb-xl">
+                <h4 style="color: var(--color-accent-purple); margin-bottom: var(--spacing-lg);">🪪 자기소개 (Identity)</h4>
+                <div class="can-do-table">
+                    <div class="can-do-row">
+                        <span class="can-do-item">영어로 내 이름을 말할 수 있다</span>
+                        <div class="can-do-options">
+                            <label><input type="radio" name="can1" value="yes"> 할 수 있다</label>
+                            <label><input type="radio" name="can1" value="no"> 연습 필요</label>
+                        </div>
+                    </div>
+                    <div class="can-do-row">
+                        <span class="can-do-item">영어로 내 나이를 말할 수 있다</span>
+                        <div class="can-do-options">
+                            <label><input type="radio" name="can2" value="yes"> 할 수 있다</label>
+                            <label><input type="radio" name="can2" value="no"> 연습 필요</label>
+                        </div>
+                    </div>
+                    <div class="can-do-row">
+                        <span class="can-do-item">영어로 내 직업을 말할 수 있다</span>
+                        <div class="can-do-options">
+                            <label><input type="radio" name="can3" value="yes"> 할 수 있다</label>
+                            <label><input type="radio" name="can3" value="no"> 연습 필요</label>
+                        </div>
+                    </div>
+                    <div class="can-do-row">
+                        <span class="can-do-item">영어로 내 출신지를 말할 수 있다</span>
+                        <div class="can-do-options">
+                            <label><input type="radio" name="can4" value="yes"> 할 수 있다</label>
+                            <label><input type="radio" name="can4" value="no"> 연습 필요</label>
+                        </div>
+                    </div>
+                    <div class="can-do-row">
+                        <span class="can-do-item">영어로 가족을 간단히 소개할 수 있다</span>
+                        <div class="can-do-options">
+                            <label><input type="radio" name="can5" value="yes"> 할 수 있다</label>
+                            <label><input type="radio" name="can5" value="no"> 연습 필요</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card mb-2xl">
+                <h4 style="color: var(--color-accent-green); margin-bottom: var(--spacing-lg);">🕐 하루 일과 (Routines)</h4>
+                <div class="can-do-table">
+                    <div class="can-do-row">
+                        <span class="can-do-item">아침에 일어나는 시간을 말할 수 있다</span>
+                        <div class="can-do-options">
+                            <label><input type="radio" name="can6" value="yes"> 할 수 있다</label>
+                            <label><input type="radio" name="can6" value="no"> 연습 필요</label>
+                        </div>
+                    </div>
+                    <div class="can-do-row">
+                        <span class="can-do-item">출퇴근 방법을 말할 수 있다</span>
+                        <div class="can-do-options">
+                            <label><input type="radio" name="can7" value="yes"> 할 수 있다</label>
+                            <label><input type="radio" name="can7" value="no"> 연습 필요</label>
+                        </div>
+                    </div>
+                    <div class="can-do-row">
+                        <span class="can-do-item">하루 일과를 5문장 이상 말할 수 있다</span>
+                        <div class="can-do-options">
+                            <label><input type="radio" name="can8" value="yes"> 할 수 있다</label>
+                            <label><input type="radio" name="can8" value="no"> 연습 필요</label>
+                        </div>
+                    </div>
+                    <div class="can-do-row">
+                        <span class="can-do-item">빈도 부사(always, usually, sometimes)를 사용할 수 있다</span>
+                        <div class="can-do-options">
+                            <label><input type="radio" name="can9" value="yes"> 할 수 있다</label>
+                            <label><input type="radio" name="can9" value="no"> 연습 필요</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 4: Weekly Achievement -->
+            <h2 class="mb-lg" style="display: flex; align-items: center; gap: var(--spacing-md);">
+                <span style="font-size: var(--font-size-2xl);">📊</span>
+                Part 4: 주간 성취도 평가
+            </h2>
+
+            <div class="glass-card mb-2xl">
+                <p style="color: var(--color-text-secondary); margin-bottom: var(--spacing-lg);">각 영역에 대해 스스로 점수를 매겨보세요.
+                </p>
+                <div class="achievement-table" id="achievementTable">
+                    <div class="achievement-row">
+                        <span class="achievement-item">📖 <strong>읽기</strong>: 스토리를 이해했나요?</span>
+                        <div class="star-rating" data-rating="0">
+                            <span class="star" data-value="1">☆</span>
+                            <span class="star" data-value="2">☆</span>
+                            <span class="star" data-value="3">☆</span>
+                            <span class="star" data-value="4">☆</span>
+                            <span class="star" data-value="5">☆</span>
+                        </div>
+                    </div>
+                    <div class="achievement-row">
+                        <span class="achievement-item">🎧 <strong>듣기</strong>: 빈칸 채우기를 잘했나요?</span>
+                        <div class="star-rating" data-rating="0">
+                            <span class="star" data-value="1">☆</span>
+                            <span class="star" data-value="2">☆</span>
+                            <span class="star" data-value="3">☆</span>
+                            <span class="star" data-value="4">☆</span>
+                            <span class="star" data-value="5">☆</span>
+                        </div>
+                    </div>
+                    <div class="achievement-row">
+                        <span class="achievement-item">📝 <strong>어휘</strong>: 10개 단어를 암기했나요?</span>
+                        <div class="star-rating" data-rating="0">
+                            <span class="star" data-value="1">☆</span>
+                            <span class="star" data-value="2">☆</span>
+                            <span class="star" data-value="3">☆</span>
+                            <span class="star" data-value="4">☆</span>
+                            <span class="star" data-value="5">☆</span>
+                        </div>
+                    </div>
+                    <div class="achievement-row">
+                        <span class="achievement-item">🎤 <strong>말하기</strong>: 자기소개를 녹음했나요?</span>
+                        <div class="star-rating" data-rating="0">
+                            <span class="star" data-value="1">☆</span>
+                            <span class="star" data-value="2">☆</span>
+                            <span class="star" data-value="3">☆</span>
+                            <span class="star" data-value="4">☆</span>
+                            <span class="star" data-value="5">☆</span>
+                        </div>
+                    </div>
+                    <div class="achievement-row">
+                        <span class="achievement-item">✍️ <strong>쓰기</strong>: 자기소개 문단을 완성했나요?</span>
+                        <div class="star-rating" data-rating="0">
+                            <span class="star" data-value="1">☆</span>
+                            <span class="star" data-value="2">☆</span>
+                            <span class="star" data-value="3">☆</span>
+                            <span class="star" data-value="4">☆</span>
+                            <span class="star" data-value="5">☆</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="totalScore"
+                    style="text-align: center; margin-top: var(--spacing-xl); padding: var(--spacing-lg); background: var(--glass-bg); border-radius: var(--radius-md);">
+                    <span style="font-size: var(--font-size-2xl); font-weight: 700; color: var(--day-review);">총점: 0 /
+                        25</span>
+                </div>
+            </div>
+
+            <!-- Part 5: Learning Journal -->
+            <h2 class="mb-lg" style="display: flex; align-items: center; gap: var(--spacing-md);">
+                <span style="font-size: var(--font-size-2xl);">📝</span>
+                Part 5: 이번 주 학습 일지
+            </h2>
+
+            <div class="glass-card mb-xl">
+                <h4 style="color: var(--color-accent-green); margin-bottom: var(--spacing-md);">😊 잘한 점</h4>
+                <textarea class="journal-textarea" placeholder="이번 주에 잘한 점을 적어보세요..."></textarea>
+            </div>
+
+            <div class="glass-card mb-xl">
+                <h4 style="color: var(--day-speaking); margin-bottom: var(--spacing-md);">😓 어려웠던 점</h4>
+                <textarea class="journal-textarea" placeholder="이번 주에 어려웠던 점을 적어보세요..."></textarea>
+            </div>
+
+            <div class="glass-card mb-2xl">
+                <h4 style="color: var(--color-accent-blue); margin-bottom: var(--spacing-md);">🎯 다음 주 목표</h4>
+                <textarea class="journal-textarea" placeholder="다음 주 목표를 적어보세요..."></textarea>
+            </div>
+
+            <!-- Week 1 Completion -->
+            <div class="glass-card text-center mb-xl"
+                style="background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%); border: none; padding: var(--spacing-2xl);">
+                <h2 style="color: white; margin-bottom: var(--spacing-lg);">🎉 Week 1 완료!</h2>
+                <p style="color: white; margin-bottom: var(--spacing-xl); font-size: var(--font-size-lg);">
+                    축하합니다! "Identity & Routines" 주제를 마쳤습니다!
+                </p>
+                <div style="text-align: left; max-width: 400px; margin: 0 auto; color: white;">
+                    <p style="margin-bottom: var(--spacing-sm);"><strong>이번 주에 배운 것:</strong></p>
+                    <div
+                        style="display: flex; align-items: center; gap: var(--spacing-sm); margin-bottom: var(--spacing-xs);">
+                        ✅ be동사 (am, is, are)
+                    </div>
+                    <div
+                        style="display: flex; align-items: center; gap: var(--spacing-sm); margin-bottom: var(--spacing-xs);">
+                        ✅ 일반동사 현재형 (-s/-es)
+                    </div>
+                    <div
+                        style="display: flex; align-items: center; gap: var(--spacing-sm); margin-bottom: var(--spacing-xs);">
+                        ✅ 빈도 부사 (always, usually, often, sometimes, never)
+                    </div>
+                    <div
+                        style="display: flex; align-items: center; gap: var(--spacing-sm); margin-bottom: var(--spacing-xs);">
+                        ✅ 자기소개 표현
+                    </div>
+                    <div style="display: flex; align-items: center; gap: var(--spacing-sm);">
+                        ✅ 하루 일과 표현
+                    </div>
+                </div>
+            </div>
+
+            <!-- Next Week Preview -->
+            <div class="glass-card mb-2xl" style="border-left: 3px solid var(--color-accent-purple);">
+                <h4 style="color: var(--color-accent-purple); margin-bottom: var(--spacing-md);">🔮 다음 주 예고: Week 2 "My
+                    World & Surroundings"</h4>
+                <ul
+                    style="padding-left: var(--spacing-lg); color: var(--color-text-secondary); line-height: 1.8; margin: 0;">
+                    <li>집 묘사하기</li>
+                    <li>위치 설명하기 (전치사)</li>
+                    <li>There is / There are 문법</li>
+                    <li>물건 사기 표현</li>
+                </ul>
+            </div>
+
+            <!-- Next Steps -->
+            <div class="glass-card text-center"
+                style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border: none; padding: var(--spacing-2xl);">
+                <h3 style="color: white; margin-bottom: var(--spacing-lg);">🚀 다음 단계</h3>
+                <div style="text-align: left; max-width: 400px; margin: 0 auto;">
+                    <div
+                        style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-md); color: white;">
+                        <span>🔄</span>
+                        <span>Can-Do Statement에서 "연습 필요"가 있다면 해당 Day 복습</span>
+                    </div>
+                    <div
+                        style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-md); color: white;">
+                        <span>📝</span>
+                        <span>학습 일지 작성 완료하기</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: var(--spacing-md); color: white;">
+                        <span>🚀</span>
+                        <span><a href="../week-2/index.html" style="color: white; text-decoration: underline;">Week 2로
+                                출발!</a></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Page Navigation -->
+    <div class="container" style="max-width: 800px;">
+        <nav class="page-nav">
+            <a href="day-6.html" class="page-nav-link">← Day 6: Writing</a>
+            <a href="../week-2/index.html" class="page-nav-link">Week 2 시작 →</a>
+        </nav>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 The Second Self Project. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+        // Vocabulary Quiz
+        const checkVocabBtn = document.getElementById('checkVocabBtn');
+        const showVocabBtn = document.getElementById('showVocabBtn');
+        const vocabResult = document.getElementById('vocabResult');
+
+        checkVocabBtn.addEventListener('click', () => {
+            const questions = document.querySelectorAll('.vocab-question');
+            let correct = 0;
+
+            questions.forEach(q => {
+                const answer = q.dataset.answer.toLowerCase().trim();
+                const input = q.querySelector('.vocab-input');
+                const feedback = q.querySelector('.vocab-feedback');
+                const userAnswer = input.value.toLowerCase().trim();
+
+                if (userAnswer === answer) {
+                    feedback.textContent = '✅ 정답!';
+                    feedback.style.color = 'var(--color-accent-green)';
+                    input.style.borderColor = 'var(--color-accent-green)';
+                    correct++;
+                } else if (userAnswer === '') {
+                    feedback.textContent = '⚠️ 답을 입력해주세요.';
+                    feedback.style.color = 'var(--color-text-tertiary)';
+                    input.style.borderColor = 'var(--glass-border)';
+                } else {
+                    feedback.textContent = `❌ 정답: ${q.dataset.answer}`;
+                    feedback.style.color = 'var(--day-speaking)';
+                    input.style.borderColor = 'var(--day-speaking)';
+                }
+            });
+
+            let message = '';
+            let bgColor = '';
+            if (correct >= 9) {
+                message = `⭐⭐⭐ ${correct}/10 정답! 완벽해요!`;
+                bgColor = 'var(--gradient-success)';
+            } else if (correct >= 7) {
+                message = `⭐⭐ ${correct}/10 정답! 훌륭해요!`;
+                bgColor = 'var(--gradient-accent)';
+            } else if (correct >= 5) {
+                message = `⭐ ${correct}/10 정답! 좋아요!`;
+                bgColor = 'linear-gradient(135deg, #00f2fe, #4facfe)';
+            } else {
+                message = `${correct}/10 정답. 복습이 필요해요!`;
+                bgColor = 'var(--gradient-warm)';
+            }
+
+            vocabResult.innerHTML = `<div style="padding: var(--spacing-lg); background: ${bgColor}; border-radius: var(--radius-md); color: white; text-align: center; font-weight: 600;">${message}</div>`;
+            vocabResult.style.display = 'block';
+        });
+
+        showVocabBtn.addEventListener('click', () => {
+            const questions = document.querySelectorAll('.vocab-question');
+            questions.forEach(q => {
+                const input = q.querySelector('.vocab-input');
+                const feedback = q.querySelector('.vocab-feedback');
+                input.value = q.dataset.answer;
+                feedback.textContent = '💡 정답입니다.';
+                feedback.style.color = 'var(--color-accent-blue)';
+                input.style.borderColor = 'var(--color-accent-blue)';
+            });
+        });
+
+        // Star Rating
+        document.querySelectorAll('.star-rating').forEach(rating => {
+            const stars = rating.querySelectorAll('.star');
+            stars.forEach(star => {
+                star.addEventListener('click', () => {
+                    const value = parseInt(star.dataset.value);
+                    rating.dataset.rating = value;
+                    stars.forEach((s, i) => {
+                        s.textContent = i < value ? '★' : '☆';
+                        s.style.color = i < value ? '#ffd700' : 'var(--color-text-tertiary)';
+                    });
+                    updateTotalScore();
+                });
+            });
+        });
+
+        function updateTotalScore() {
+            let total = 0;
+            document.querySelectorAll('.star-rating').forEach(rating => {
+                total += parseInt(rating.dataset.rating) || 0;
+            });
+            document.getElementById('totalScore').innerHTML = `<span style="font-size: var(--font-size-2xl); font-weight: 700; color: var(--day-review);">총점: ${total} / 25</span>`;
+        }
+    </script>
+
+    <style>
+        /* Vocabulary Question Styles */
+        .vocab-question {
+            margin-bottom: var(--spacing-xl);
+            padding-bottom: var(--spacing-lg);
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .vocab-question:last-of-type {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .vocab-input {
+            width: 100%;
+            max-width: 300px;
+            padding: var(--spacing-md);
+            background: var(--glass-bg);
+            border: 2px solid var(--glass-border);
+            border-radius: var(--radius-md);
+            color: var(--color-text-primary);
+            font-size: var(--font-size-base);
+            transition: all var(--transition-fast);
+        }
+
+        .vocab-input:focus {
+            outline: none;
+            border-color: var(--day-review);
+        }
+
+        .vocab-feedback {
+            margin-top: var(--spacing-sm);
+            font-size: var(--font-size-sm);
+            font-weight: 500;
+        }
+
+        .hint {
+            color: var(--color-text-tertiary);
+            font-size: var(--font-size-sm);
+        }
+
+        /* Sentence Table */
+        .sentence-table {
+            display: grid;
+            gap: var(--spacing-md);
+        }
+
+        .sentence-row {
+            display: grid;
+            grid-template-columns: auto 1fr 1fr;
+            gap: var(--spacing-md);
+            align-items: center;
+            padding: var(--spacing-md);
+            background: var(--glass-bg);
+            border-radius: var(--radius-md);
+        }
+
+        .sentence-num {
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--day-review);
+            color: white;
+            border-radius: var(--radius-sm);
+            font-size: var(--font-size-sm);
+            font-weight: 700;
+        }
+
+        .sentence-en {
+            color: var(--color-text-primary);
+            font-weight: 500;
+        }
+
+        .sentence-ko {
+            color: var(--color-text-secondary);
+            font-size: var(--font-size-sm);
+        }
+
+        /* Can-Do Table */
+        .can-do-table {
+            display: grid;
+            gap: var(--spacing-md);
+        }
+
+        .can-do-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: var(--spacing-md);
+            padding: var(--spacing-md);
+            background: var(--glass-bg);
+            border-radius: var(--radius-md);
+        }
+
+        .can-do-item {
+            color: var(--color-text-secondary);
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .can-do-options {
+            display: flex;
+            gap: var(--spacing-lg);
+        }
+
+        .can-do-options label {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            color: var(--color-text-secondary);
+            cursor: pointer;
+        }
+
+        .can-do-options input {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+        }
+
+        /* Achievement Table */
+        .achievement-table {
+            display: grid;
+            gap: var(--spacing-md);
+        }
+
+        .achievement-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: var(--spacing-md);
+            padding: var(--spacing-md);
+            background: var(--glass-bg);
+            border-radius: var(--radius-md);
+        }
+
+        .achievement-item {
+            color: var(--color-text-secondary);
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .star-rating {
+            display: flex;
+            gap: var(--spacing-xs);
+        }
+
+        .star {
+            font-size: var(--font-size-xl);
+            color: var(--color-text-tertiary);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+        }
+
+        .star:hover {
+            transform: scale(1.2);
+        }
+
+        /* Journal Textarea */
+        .journal-textarea {
+            width: 100%;
+            min-height: 100px;
+            padding: var(--spacing-lg);
+            background: var(--glass-bg);
+            border: 2px solid var(--glass-border);
+            border-radius: var(--radius-md);
+            color: var(--color-text-primary);
+            font-size: var(--font-size-base);
+            font-family: var(--font-body);
+            line-height: 1.8;
+            resize: vertical;
+            transition: all var(--transition-fast);
+        }
+
+        .journal-textarea:focus {
+            outline: none;
+            border-color: var(--day-review);
+        }
+
+        .journal-textarea::placeholder {
+            color: var(--color-text-muted);
+        }
+
+        /* Checklist Styles */
+        .checklist {
+            display: grid;
+            gap: var(--spacing-md);
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+            padding: var(--spacing-md);
+            background: var(--glass-bg);
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            color: var(--color-text-secondary);
+        }
+
+        .checklist-item:hover {
+            background: rgba(0, 242, 254, 0.1);
+        }
+
+        .checklist-item input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .checklist-item input[type="checkbox"]:checked+span {
+            color: var(--color-accent-green);
+            text-decoration: line-through;
+        }
+
+        /* Highlight */
+        .highlight {
+            color: var(--color-accent-blue);
+            font-weight: 600;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .sentence-row {
+                grid-template-columns: auto 1fr;
+            }
+
+            .sentence-ko {
+                grid-column: 2;
+            }
+
+            .can-do-row,
+            .achievement-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</body>
+
+</html>
